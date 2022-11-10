@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-image: linear-gradient(to top left, blue, violet);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+header {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .5);
+}
