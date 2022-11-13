@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+#container {
+    width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rectangle_up {
+    background-color: #990000;
+    margin-top: 20px;
+	text-align: center;
+}
+
+.rectangle_down {
+    background-color: #800000;
+	text-align: center;
+}
+
+#logo
+{
+    float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 70px;
+	width: auto;
+	text-align: left;
+    margin: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+
+.menu {
+    float: left;
+    width: 20%;
+    background-color: #b32400;
+
+}
+
+.menu_content {
+    width: 80%;
+    margin: 25px;
+    font-size: 25px;
+    line-height:32px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+.content {
+    float: left;
+    background-color: #e62e00;
+}
+
+.car {
+    background-color: #cc2900;
+    font-size: 22px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.car_in {
+    max-width: 990px;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.model {
+    font-size: 22px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+a.link
+{
+	color: #ffffff;
+	text-decoration: none;
+}
