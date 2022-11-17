@@ -79,7 +79,7 @@ body {
 .nav-item a:hover + ul,
 .nav-item ul:hover {
     display: block;
-    animation: dropdown .25s;
+    animation: dropdown .3s;
 }
 
 @keyframes dropdown {
