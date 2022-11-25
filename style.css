@@ -36,14 +36,10 @@ body {
     padding: 0 1em;
 }
 
-.navbar a {
+.navbar .logo,
+.navbar .nav-link {
     text-decoration: none;
     padding: 1em 2em;
-}
-
-.navbar span {
-    padding: 1em 2em;
-    margin: 0;
 }
 
 .nav-item {
@@ -70,9 +66,9 @@ body {
 }
 
 .nav-item li a {
+    display: block;
     padding: .5em;
     margin: 0;
-    display: inline-block;
 }
 
 .nav-item a:focus + ul,
@@ -82,11 +78,62 @@ body {
     animation: dropdown .3s;
 }
 
+.menu-button {
+    position: absolute;
+    top: .9em;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.8em;
+    height: 1.1em;
+}
+
+.menu-button .bar {
+    height: .2em;
+    width: 100%;
+    background: #c5c5c5;
+    border-radius: .3em;
+}
+
 @keyframes dropdown {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1050px) {
+    .menu-button {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-item ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-item ul li {
+        text-align: center;
+    }
+
+    .nav-item ul li a {
+        padding: .5em 1em;
+    }
+
+    .nav-item.active {
+        display: flex;
     }
 }
