@@ -61,7 +61,7 @@ body {
 }
 
 .nav-item li:hover {
-    background: #1c0844;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: .5em;
 }
 
@@ -69,6 +69,7 @@ body {
     display: block;
     padding: .5em;
     margin: 0;
+    text-decoration: none;
 }
 
 .nav-item a:focus + ul,
@@ -110,9 +111,13 @@ body {
         display: flex;
     }
 
+
     .menu {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-item {
@@ -120,20 +125,57 @@ body {
         width: 100%;
     }
 
+    .nav-item:hover {
+        background: rgba(255, 255, 255, .05);
+    }
+
     .nav-item ul {
         width: 100%;
         flex-direction: column;
+        margin: 0;
     }
 
     .nav-item ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-item a {
+        width: 100%;
         text-align: center;
     }
 
     .nav-item ul li a {
         padding: .5em 1em;
+        width: 100%;
     }
 
-    .nav-item.active {
+    .menu.active .nav-item {
         display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item a:hover + ul,
+    .nav-item ul:hover {
+        display: none;
+        animation: none;
+    }
+
+    .nav-item a:focus + ul,
+    .nav-item ul:hover {
+        display: flex;
+        position: relative;
+        animation: none;
+        background: #180739;
+        border-radius: 0;
+    }
+
+    .nav-item ul li:hover {
+        border-radius: 0;
     }
 }
